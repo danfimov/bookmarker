@@ -1,5 +1,5 @@
 """
-Сервис с REST API, позволяющий укорачивать ссылки.
+RESTAPI for operations with bookmarks
 """
 __author__ = "Anfimov Dmitry"
 __maintainer__ = __author__
