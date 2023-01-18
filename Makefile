@@ -36,6 +36,11 @@ env:  ##@Environment Create .env file with variables
 	@cp .env.sample .env
 	@echo "SECRET_KEY=$$(openssl rand -hex 32)" >> .env
 
+install:  ##@Setup Install project requirements
+	python3 -m pip install poetry
+	poetry install
+
+
 help: ##@Help Show this help
 	@echo -e "Usage: make [target] ...\n"
 	@perl -e '$(HELP_FUN)' $(MAKEFILE_LIST)
