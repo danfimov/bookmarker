@@ -11,8 +11,6 @@ def bind_routes(application: FastAPI, setting: DefaultSettings) -> None:
     """
     Bind all routes to application.
     """
-
-    a = 10
     for route in list_of_routes:
         application.include_router(route, prefix=setting.PATH_PREFIX)
 
