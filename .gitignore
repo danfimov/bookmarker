@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Files from IDE
+.idea/
+
+# Ruff files
+.ruff_cache/
